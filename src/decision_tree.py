@@ -101,7 +101,7 @@ def write_predictions_and_score(validation_score, model, columns_used):
     key = "decision_tree"
     if not os.path.exists('data/{}'.format(key)):
         os.makedirs('data/{}'.format(key))
-    filename = 'data/{}/model.pkl'.format(key)
+    filename = 'data/{}/model3.pkl'.format(key)
     print("Writing to {}".format(filename))
     joblib.dump(model, filename)
 
